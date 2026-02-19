@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+frontend/.next/
 /out/
 
 # production
@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+frontend/node_modules/
+Skystone.ApiService/bin/
+Skystone.ApiService/obj/
+Skystone.AppHost/
+Skystone.ServiceDefaults/bin/
+Skystone.ServiceDefaults/obj/
