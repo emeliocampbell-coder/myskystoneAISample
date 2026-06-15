@@ -45,3 +45,11 @@ Skystone.ApiService/obj/
 Skystone.AppHost/
 Skystone.ServiceDefaults/bin/
 Skystone.ServiceDefaults/obj/
+Skystone.Api/bin/
+Skystone.Api/obj/
+Skystone.Application/bin/
+Skystone.Application/obj/
+Skystone.Domain/bin/
+Skystone.Domain/obj/
+Skystone.Infrastructure/bin/
+Skystone.Infrastructure/obj/

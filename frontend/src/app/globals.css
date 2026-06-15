@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+@theme inline {
+  --color-brand-bg: #181E2E;
+  --color-brand-surface: #252D40;
+  --color-brand-primary: #F5F0E8;
+  --color-brand-muted: #9BA3B2;
+  --color-brand-accent: #E8A855;
+  --color-brand-accent-hover: #D99A45;
+  --color-brand-darker: #0F172A;
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #181E2E;
+  color: #F5F0E8;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+.card-glow {
+  box-shadow: 0 0 40px rgba(37, 45, 64, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
+
+.input-ghost {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.input-ghost:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(232, 168, 85, 0.4);
+  outline: none;
+  box-shadow: 0 0 15px rgba(232, 168, 85, 0.1);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.reflection-card {
+  background: rgba(37, 45, 64, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.reflection-card:hover {
+  border-color: rgba(232, 168, 85, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 20px rgba(232, 168, 85, 0.05);
+}
